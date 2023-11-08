@@ -455,11 +455,13 @@ class _tictocState extends State<tictoc> {
               ),
             ),
           ),
+          SizedBox(height: 20,),
           Container(
-              child: Text("\n$a",
+              child: Text("Winner = $a ",
                   style: TextStyle(
                     fontSize: 30,
                   ))),
+          SizedBox(height: 20,),
           InkWell(
             onTap: () {
               setState(() {
@@ -477,12 +479,16 @@ class _tictocState extends State<tictoc> {
               });
             },
             child: Container(
-              child: Text(
-                "Clear Score Board ",
-                style: TextStyle(fontSize: 20),
+              height: 40,
+              width: 200,
+              child: Center(
+                child: Text(
+                  "Clear Score Board ",
+                  style: TextStyle(fontSize: 20,color: Colors.white),
+                ),
               ),
               decoration: BoxDecoration(
-                  color: Colors.lightBlueAccent,
+                  color: Colors.brown,
                   border: Border.all(color: Colors.black26)),
             ),
           )
